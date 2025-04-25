@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noa JOUVE</title>
+  <link rel="icon" type="image/png" href="images/pngegg.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="txtGaucheLogo">
+      <img src="images/pngegg.png" alt="Avion" />
+      <h1>Noa JOUVE</h1>
+    </div>
+    <ul class="onglets">
+      <li><a href="#information">Mon histoire</a></li>
+      <li><a href="#qualites">Traits d'altitude</a></li>
+      <li><a href="#competences">Mes ailes techniques</a></li>
+      <li><a href="#photo">Rêves en images</a></li>
+      <li><a href="#documents">Documents de vol</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Le ciel n’a pas de routes, </h1>
+    <h2>mais les pilotes y tracent leurs rêves.</h2>
+
+    <!-- Controlleur de couleurs -->
+    <div id="boutton-personnalisation">
+      <button id="change-color-btn"></button>
+
+      <div id="color-selector">
+        <label for="color-toggle" class="color-button"></label>
+        <input type="checkbox" id="color-toggle" style="display:none;">
+        <div class="dropdown">
+          <div class="color-option" data-theme="default">Saphir</div>
+          <div class="color-option" data-theme="theme1">Émeraude</div>
+          <div class="color-option" data-theme="theme2">Rubis</div>
+          <div class="color-option" data-theme="theme3">Corail</div>
+          <div class="color-option" data-theme="theme4">Améthyste</div>
+          <div class="color-option" data-theme="secret">Arc-en-ciel</div>
+        </div>
+      </div>
+
+    </div>
+    
+  </header>
+
+  <!-- Section - Mon histoire -->
+  <h1>Mon histoire</h1>
+  <section class="bloc-section information" id="information">
+    <div class="photo-container">
+      <img src="images/profil_noa.jpg" alt="Photo de moi" class="portrait">
+    </div>
+    <div class="texte-histoire">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed lacinia nisi sagittis
+        vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit amet tortor interdum
+        faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique efficitur sed eu dolor.
+        Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis in vel diam. Proin elit
+        leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur tincidunt id pulvinar arcu.
+        Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor tincidunt. Curabitur malesuada tortor
+        diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec ut nunc in arcu venenatis fermentum ut
+        aliquam diam.
+      </p>
+      <p>
+        Nulla interdum sodales metus, non condimentum ligula sagittis sit amet. Ut tincidunt quam id dolor hendrerit,
+        facilisis ornare mauris feugiat. Nulla leo lacus, fringilla ut nulla ut, suscipit accumsan metus. Pellentesque
+        sollicitudin elementum hendrerit. Cras lacinia nibh nec lacus auctor, varius pellentesque est dictum. Ut
+        vulputate volutpat lacus sed rhoncus. Donec vestibulum vulputate commodo. Vestibulum et dolor eu enim commodo
+        vulputate non at justo. Aliquam in odio id ante viverra consectetur sed et massa. Fusce dui nunc, eleifend vitae
+        nulla in, ultrices aliquet ligula. Fusce fermentum, tortor mollis hendrerit venenatis, augue ante commodo
+        mauris, eget mollis magna velit eget ante.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section - Traits d'altitude -->
+  <h1>Traits d'altitude</h1>
+  <section class="bloc-section" id="qualites">
+    <div class="qualite-bloc row">
+      <h2>Qualité 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed lacinia nisi
+        sagittis
+        vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit amet tortor interdum
+        faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique efficitur sed eu dolor.
+        Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis in vel diam. Proin elit
+        leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur tincidunt id pulvinar arcu.
+        Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor tincidunt. Curabitur malesuada tortor
+        diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec ut nunc in arcu venenatis fermentum ut
+        aliquam diam.</p>
+    </div>
+
+    <div class="qualite-bloc row-reverse">
+      <h2>Qualité 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed lacinia nisi
+        sagittis
+        vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit amet tortor interdum
+        faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique efficitur sed eu dolor.
+        Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis in vel diam. Proin elit
+        leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur tincidunt id pulvinar arcu.
+        Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor tincidunt. Curabitur malesuada tortor
+        diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec ut nunc in arcu venenatis fermentum ut
+        aliquam diam.</p>
+    </div>
+
+    <div class="qualite-bloc row">
+      <h2>Qualité 3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed lacinia nisi
+        sagittis
+        vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit amet tortor interdum
+        faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique efficitur sed eu dolor.
+        Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis in vel diam. Proin elit
+        leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur tincidunt id pulvinar arcu.
+        Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor tincidunt. Curabitur malesuada tortor
+        diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec ut nunc in arcu venenatis fermentum ut
+        aliquam diam.</p>
+    </div>
+
+    <div class="qualite-bloc row-reverse">
+      <h2>Qualité 4</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed lacinia nisi
+        sagittis
+        vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit amet tortor interdum
+        faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique efficitur sed eu dolor.
+        Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis in vel diam. Proin elit
+        leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur tincidunt id pulvinar arcu.
+        Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor tincidunt. Curabitur malesuada tortor
+        diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec ut nunc in arcu venenatis fermentum ut
+        aliquam diam.</p>
+    </div>
+  </section>
+
+  <!-- Section - Mes ailes techniques -->
+  <h1>Mes ailes techniques</h1>
+  <section class="bloc-section" id="competences">
+    <div class="competences-container">
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 1">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 2">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 3">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 4">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 5">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 6">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 7">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 8">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+      <div class="competence">
+        <img src="images/image_exemple.jpg" alt="Compétence 9">
+        <div class="overlay">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt mauris arcu, sed
+          lacinia nisi sagittis vitae. Integer quis diam dui. Vivamus sit amet felis quam. Vivamus ultrices nibh sit
+          amet tortor interdum faucibus. Sed tempus ex arcu, ac laoreet arcu rhoncus vitae. Sed a nibh id dui tristique
+          efficitur sed eu dolor. Quisque eget elit et orci luctus faucibus. Etiam sed nulla ac massa ultrices convallis
+          in vel diam. Proin elit leo, tempus non sapien vel, finibus molestie quam. Nam eget ex nec ligula efficitur
+          tincidunt id pulvinar arcu. Donec ullamcorper velit viverra nulla ultricies, tincidunt rhoncus dolor
+          tincidunt. Curabitur malesuada tortor diam, vitae pretium leo pellentesque vel. Nam eu consequat elit. Donec
+          ut nunc in arcu venenatis fermentum ut aliquam diam.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - Rêves en images -->
+  <h1>Rêves en images</h1>
+  <section class="bloc-section" id="photo">
+    <div class="scrolling-row left-to-right">
+      <div class="scrolling-track">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <!-- Répété pour la boucle -->
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+      </div>
+    </div>
+    <div class="scrolling-row right-to-left">
+      <div class="scrolling-track">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <!-- Répété pour la boucle -->
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+      </div>
+    </div>
+    <div class="scrolling-row left-to-right">
+      <div class="scrolling-track">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <!-- Répété pour la boucle -->
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+        <img src="images/image_exemple.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - Documents de vol -->
+  <h1>Documents de vol</h1>
+  <section class="bloc-section" id="documents">
+    <div class="documents-container">
+      <!-- Carte 1 -->
+      <div class="document-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/example.jpg" alt="CV">
+            <h3>Mon CV</h3>
+          </div>
+          <div class="card-back">
+            <p>Retrouvez mon parcours pro et mes compétences en un clin d'œil.</p>
+            <a href="docs/CV_Noa_JOUVE.pdf" download>Télécharger</a>
+          </div>
+        </div>
+      </div>
+      <!-- Carte 2 -->
+      <div class="document-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/example.jpg" alt="Lettre de motivation">
+            <h3>Lettre de motivation</h3>
+          </div>
+          <div class="card-back">
+            <p>Ma vision, mes objectifs et ce qui me fait voler plus haut.</p>
+            <a href="docs/Lettre_Motivation_Noa.pdf" download>Télécharger</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+
+      <h4>Merci pour votre attention</h4>
+
+      <h2>Vous pouvez me retrouver sur :</h2>
+
+      <div class="social-icons">
+        <a href="#" title="Twitter">
+          <img src="images/twitter-icon.png" alt="Twitter" />
+        </a>
+        <a href="#" title="LinkedIn">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+        <a href="#" title="Facebook">
+          <img src="images/facebook-icon.png" alt="Facebook" />
+        </a>
+        <a href="#" title="YouTube">
+          <img src="images/youtube-icon.png" alt="YouTube" />
+        </a>
+        <a href="#" title="Instagram">
+          <img src="images/instagram-icon.png" alt="Instagram" />
+        </a>
+      </div>
+
+      <p>Noa JOUVE <br>
+        &copy;2025 - Tous droits réservés</p>
+
+    </div>
+  </footer>
+</body>
+
+</html>
