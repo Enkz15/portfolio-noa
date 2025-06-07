@@ -5,6 +5,7 @@
 /* Nom police: Rouge Script */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
 /* Nom police: Audiowide */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=DM+Serif+Text:ital@0;1&family=Edu+VIC+WA+NT+Hand+Pre:wght@500&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Rouge+Script&display=swap');
 
 /* ==============================================
       COULEURS
@@ -27,7 +28,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Quantico', sans-serif;
+    font-family: "Edu VIC WA NT Hand Pre";
+    word-spacing: 0.3em;
     background-color: rgba(var(--color-background));
 }
 
@@ -251,7 +253,24 @@ header h2 {
     border-radius: 1.25em;
     padding: 5em 1.25em;
     display: flex;
+    flex-direction: column;
     gap: 2.5em;
+    align-items: center;
+}
+
+.portrait {
+    height: 30em;
+    border-radius: 1.25em;
+    object-fit: cover;
+    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.3);
+}
+
+.texte-histoire {
+    font-size: 1.2em;
+    color: rgba(var(--color-text));
+    line-height: 1.6;
+    width: 100%;
+    text-indent: 1.25em;
 }
 
 .photo-container {
@@ -260,25 +279,9 @@ header h2 {
     justify-content: center;
 }
 
-.portrait {
-    height: 25em;
-    border-radius: 1.25em;
-    object-fit: cover;
-    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.3);
-}
-
-.texte-histoire {
-    flex: 2;
-    font-size: 1.2em;
-    color: rgba(var(--color-text));
-    line-height: 1.6;
-}
-
 @media (max-width: 48em) {
-
     .bloc-section,
     .information {
-        flex-direction: column;
         width: 90%;
         padding: 2em 1em;
         gap: 0;
@@ -344,54 +347,62 @@ header h2 {
 /* ==============================================
       COMPÉTENCES
       ============================================== */
-#competences .competences-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.25em;
-    padding: 1.25em 0;
-}
-
-.competence {
-    position: relative;
-    width: 20em;
-    height: 20em;
-    border-radius: 0.9375em;
-    box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.competence img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.competence:hover img {
-    transform: scale(1.1);
-}
-
-.competence .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    display: flex;
-    align-items: flex-start;
-    padding: 1em;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.competence-container {
+    width: 80%;
+    margin: auto;
     text-align: center;
-    overflow-y: auto;
-    overflow-wrap: normal;
-    font-size: 1em;
 }
 
-.competence:hover .overlay {
-    opacity: 1;
+.competence-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background-color: rgba(var(--color1), 0.8);
+    color: white;
+    border: none;
+    font-family: "Edu VIC WA NT Hand Pre";
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: rgba(var(--color2), 0.8);
+    color: black;
+}
+
+.tab-button.active {
+    background-color: rgba(var(--color2));
+    color: black;
+}
+
+.competence-content {
+    display: none;
+    background-color: rgba(var(--color-background), 0.95);
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.competence-content.active {
+    display: block;
+}
+
+.competence-content ul {
+    list-style: circle;
+    padding: 0;
+}
+
+.competence-content li {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: rgba(var(--color-text));
 }
 
 /* ==============================================
@@ -455,31 +466,25 @@ header h2 {
 /* ==============================================
       DOCUMENTS DE VOL (CARDS)
       ============================================== */
-#documents.bloc-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .documents-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 5em;
+    flex-wrap: wrap;
+    gap: 3em;
 }
 
 .document-card {
-    width: 15.625em;
-    height: 20em;
-    perspective: 62.5em;
+    width: 250px;
+    height: 320px;
+    perspective: 1000px;
 }
 
 .card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    position: relative;
 }
 
 .document-card:hover .card-inner {
@@ -489,67 +494,70 @@ header h2 {
 .card-front,
 .card-back {
     position: absolute;
-    width: 90%;
-    height: 90%;
-    border-radius: 0.9375em;
-    box-shadow: 0 0.25em 0.625em rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
     backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.25em;
     background-color: rgba(var(--color1));
+    color: white;
+}
+
+.card-front {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-front img {
-    width: 5em;
-    height: 5em;
-    margin-bottom: 1.25em;
+    width: 90%;
+    height: auto;
+    max-height: 70%;
+    object-fit: contain;
+    margin-bottom: 1em;
+}
+
+.document-card {
+    width: 260px;
+    height: 340px;
+    perspective: 1000px;
 }
 
 .card-front h3 {
-    font-size: 1.5em;
-    color: rgba(var(--color1));
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: rgba(var(--color2));
 }
 
 .card-back {
-    background-color: rgba(var(--color1));
-    color: rgba(var(--color-background));
     transform: rotateY(180deg);
+    padding: 1em;
     text-align: center;
 }
 
 .card-back a {
-    margin-top: 1.25em;
+    margin-top: 1em;
     text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 8px;
     background-color: rgba(var(--color-background));
-    padding: 0.625em 1.25em;
-    border-radius: 0.625em;
-    background-color: rgba(var(--color-background));
-    transition: background-color 0.3s;
     color: rgba(var(--color1));
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 .card-back a:hover {
-    background-color: rgba(var(--color-background), 0.6);
+    background-color: rgba(var(--color2), 0.7);
+    color: black;
 }
 
-@media (max-width: 400px) {
-    .document-card {
-        width: 95vw;
-        perspective: 20em;
-    }
-
-    .card-front,
-    .card-back {
-        padding: 1em;
-    }
-
-    .documents-container {
-        padding: 0.5em;
-    }
-}
 
 /* ==============================================
       FOOTER

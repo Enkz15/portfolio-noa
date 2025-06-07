@@ -51,3 +51,14 @@ function setTheme(colors) {
     document.documentElement.style.setProperty("--color1", colors.color1);
     document.documentElement.style.setProperty("--color2", colors.color2);
 }
+
+document.querySelectorAll(".tab-button").forEach(button => {
+    button.addEventListener("click", () => {
+        document.querySelectorAll(".tab-button").forEach(btn => btn.classList.remove("active"));
+        document.querySelectorAll(".competence-content").forEach(content => content.classList.remove("active"));
+
+        button.classList.add("active");
+        const tabId = button.getAttribute("data-tab");
+        document.getElementById(tabId).classList.add("active");
+    });
+});
