@@ -62,3 +62,23 @@ document.querySelectorAll(".tab-button").forEach(button => {
         document.getElementById(tabId).classList.add("active");
     });
 });
+
+let currentImageSrc = "";
+
+function openModal(src) {
+    currentImageSrc = src;
+    document.getElementById("modalImage").src = src;
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("overlay").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
+}
+
+function openInNewTab() {
+    if (currentImageSrc) {
+        window.open(currentImageSrc, "_blank");
+    }
+}
